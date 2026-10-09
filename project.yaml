@@ -1,0 +1,23 @@
+name: BusTyreTracker
+owner: SM Irali
+description: Single-user Android app that tracks tyre condition and star rating for each bus.
+platform: Android (Kotlin, Jetpack Compose, Room)
+package: com.bustyre.tracker
+sdk:
+  min: 26
+  target: 34
+languages:
+  - English
+  - Kannada
+data:
+  storage: on phone only (Room)
+  internet_permission: false
+  backup: false
+tyre_positions: [OF, NF, ORO, ORI, NRO, NRI, SPARE]
+features:
+  - Vehicle list with search
+  - Tyre condition (New / Resole) and rating (1 to 3 stars)
+  - 1 / 2 / 3 star vehicle lists
+  - PDF export
+  - Assistant (numbered options, English and Kannada; no Add vehicle)
+  - Live (always-listening voice assistant: add vehicle, 1/2/3 star lists with tyre positions, counts, vehicle info, history, edit, delete, export PDF)
